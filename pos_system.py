@@ -1,4 +1,5 @@
 import os
+import subprocess
 import pandas as pd
 import tkinter as tk
 
@@ -27,7 +28,6 @@ def search_product():
         product_name_var.set("PRODUKTI NUK U GJEND.")
         price_var.set(0)
         total_var.set(0)
-
 
 
 def update_total():
@@ -231,6 +231,14 @@ total_display.config(fg="red")
 # - - - CLEAR ALL BUTTON - - -
 clear_button = tk.Button(root, text="FSHIJ TE GJITHA", command=clear_buy_list, font=("Arial", 15))
 clear_button.pack(pady=10)
+
+
+# - - - OPEN CSV BUTTON - - -
+def open_csv_file():
+    subprocess.run(['start', csv_file_path], shell=True)
+
+open_csv_button = tk.Button(root, text="Open CSV", command=open_csv_file, font=("Arial", 15))
+open_csv_button.pack(side=tk.BOTTOM, pady=20)
 
 
 # - - - CHOISED PRODUCT - - -
