@@ -85,15 +85,22 @@ def update_buy_list():
         )
         delete_button.grid(row=index, column=1, padx=5, pady=5)
 
+# Get the desktop directory
+desktop_path = os.path.join(os.path.expanduser('~'), 'Desktop')
 
-# Get the directory path where the script is located
-script_dir = os.path.dirname(__file__) if "__file__" in locals() else os.getcwd()
+# Define the file name for your CSV
+csv_file_name = 'products.csv'
 
-# Construct the full path to your CSV file
-csv_file_path = os.path.join(script_dir, 'products.csv')
+# Construct the full path to your CSV file on the desktop
+csv_file_path = os.path.join(desktop_path, csv_file_name)
 
-# Read the data from the CSV file
-data = pd.read_csv(csv_file_path)
+# Check if the CSV file exists on the desktop
+if os.path.exists(csv_file_path):
+    # Read the data from the CSV file
+    data = pd.read_csv(csv_file_path)
+else:
+    # Handle if the file doesn't exist
+    print("CSV file not found on the desktop.")
 
 # Create the main window
 root = tk.Tk()
