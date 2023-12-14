@@ -9,4 +9,6 @@ An efficient Point of Sale (POS) system utilizing barcode and product name searc
 - list
 - total price
 
+**Created from scratch!!**
+
 oferted in SHQIP, new version coming soon...
