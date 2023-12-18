@@ -39,7 +39,7 @@ The application provides functionalities to:
 ## Instructions
 
 1. The script requires a CSV file named `products.csv` containing product details like ProductName, Barcode, Price, etc.
-2. Ensure the CSV file is located on the desktop for the script to read.
+2. **Ensure the CSV file is located on the Desktop for the script to read.**
 
 
 ## Customization
@@ -49,7 +49,7 @@ Feel free to customize the product management system to fit specific business re
 
 ## Note
 
-- The script assumes the presence of a CSV file (`products.csv`) on the desktop containing product details.
+- I am currently engaged in developing this project to be executable as both a **desktop** application and a **mobile** application.
 
 
 ## Contact Information
