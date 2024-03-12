@@ -47,10 +47,6 @@ The application provides functionalities to:
 Feel free to customize the product management system to fit specific business requirements or UI enhancements. You can modify layouts, add new functionalities, or integrate additional features based on your needs.
 
 
-## Note
-
-- I am currently engaged in developing this project to be executable as both a **desktop** application and a **mobile** application.
-
 
 <br>
 <!-- Connect with me -->
